@@ -1,0 +1,38 @@
+body{
+    background-color: whitesmoke;
+}
+
+iframe{
+    border: 3px dotted #999;
+}
+
+#body{
+    background-color: #BFACE2;
+    display: flex;
+}
+
+#body #sidebar{
+    background-color: m;
+    float: left;
+    width: 30%;
+}
+
+#body #sidebar ul li{
+    list-style: none;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+#body #sidebar ul li a{
+    background-color: #3E54AC;
+    color: #fff;
+    padding: 10px;
+}
+
+#body #konten{
+    width: 70%;
+    float: left;
+    background-color: #E3DFFD;
+}

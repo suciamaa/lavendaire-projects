@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEMWEB UAS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- JavaScript agar dapat mengubah teks di bagian header -->
+    <script>
+        function fungsiku() {
+            document.getElementById("test").innerHTML = "Bagaimana? Nobu menarik perhatianmu bukannn? <br> Miliki notebook indah yang akan mencatat perjalanan harimu dengan lavendaire!"
+        }
+    </script>
+    <!-- Function Javascript Untuk menampilkan hasil Form -->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("frm1");
+          var text = "Welcome To The Club! ";
+          var i;
+          for (i = 0; i < x.length ;i++) {
+            text += x.elements[i].value + " ";
+          }
+          document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+    <!-- Pemanggilan File Javascript untuk mengatur menu agar dapat berubah -->
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+
+    <!-- Header Awal dengan Navigasi -->
+    <header>
+        <a href="#" class="logo">Lavendaire<span>S.</span></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#author">Author</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#new">21.Edition</a></li>
+            <li><a href="#youtube">Youtube</a></li>
+            <li><a href="#Subscribe">Join Club</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Section Untuk Landing Page Awal -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1><Span>Best </Span>Notebook<br> For Your <span>Journalling</span></h1>
+            <p id="test">Lavendaire menyediakan notebook dengan isi buku beragam template. <br>
+                Nobu adalah nama notebook yang kami berikan untuk buku cantik ini. <br>
+                Nobu memiliki beragam warna dan cover cantik yang akan menarik <br>
+                perhatianmu untuk terus konsisten melakukan journalling</p>
+            <a href="#shop" class="btn" onclick="fungsiku()">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Section About Lavendaire -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="foto/about.webp" alt="">
+        </div>
+        <div class="about-text">
+            <span>Nobu Is For You</span>
+            <h2>Lavendaire is for the artist of life.</h2>
+            <p>An artist of life is someone who owns her power to envision and create her dream life.</p>
+            <p>To her, life is an art—it is the ultimate form of self expression. With this freedom, she sets out to create a life unique to her, one that she absolutely loves.</p>
+            <p>
+                This process of creating is a dance between the artist’s intentions and a divine guide. As her life unfolds, so does her masterpiece. One stroke leads to another, and the painting comes to life.
+                In the end, her life is beyond what she could have imagined in the beginning. It is even better.
+            </p>
+            <a href="#author" class="btn">Our Author</a>
+        </div>
+    </section>
+
+    <!-- Section Untuk Perkenalan Author -->
+    <section class="author" id="author">
+        <div class="author-text">
+            <span>Meet Our Lavendaire!</span>
+            <h2>Hello, I'm Aileen Xu</h2>
+            <p>I am a content creator, entrepreneur and artist of life.</p>
+            <p>I create content, resources & lifestyle products that empower you to create your dream life.</p>
+            <p>Lavendaire is a resource for personal growth & lifestyle design. Here, you can find practical, inspirational, and thoughtful content to help you become 
+               your best self and create a beautiful, meaningful life. What you learn here will nurture your mind and soul, open your heart, and inspire positive change in your life.
+            </p>
+            <a href="#youtube" class="btn">Lavendaire Youtube</a>
+        </div>
+        <div class="author-img">
+            <img src="foto/lavieen.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- Section Untuk BestSeller Product-->
+    <section class="shop" id="shop">
+        <div class="heading">
+            <span>Spring Collection</span>
+            <h2>Best Selling To Be Your Mine</h2>
+        </div>
+        <div class="shop-container">
+            <!-- Rose Box -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="foto/1.webp" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>Rose</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                </div>
+                <span>25$</span>
+                <i class='bx bx-cart' ></i>
+            </div>
+             <!-- Daisy Box -->
+             <div class="box">
+                <div class="box-img">
+                    <img src="foto/2.webp" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>Daisy</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                </div>
+                <span>25$</span>
+                <i class='bx bx-cart' ></i>
+            </div>
+            <!-- Jasmine Box -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="foto/3.webp" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>Jasmine</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                    </div>
+                </div>
+                <span>25$</span>
+                <i class='bx bx-cart' ></i>
+            </div>
+        </div>
+    </section>
+
+    <!--Section Untuk Notebook 2021 Edition-->
+    <section class="new" id="new">
+        <div class="heading">
+            <span>~ 2021 Edition - With Best Color Ever ~</span>
+            <h2>Buy Your Own!</h2>
+        </div>
+
+        <div class="new-container">
+            <!-- Blue Box -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="foto/blue.webp" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>Blue</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                </div>
+                <span>20$</span>
+                <i class='bx bx-cart'></i>
+            </div>
+            <!-- Yellow Box -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="foto/yellow.webp" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>Yellow</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                </div>
+                <span>18$</span>
+                <i class='bx bx-cart'></i>
+            </div>
+            <!-- White Box -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="foto/white.jpg" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>White</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                </div>
+                <span>18$</span>
+                <i class='bx bx-cart'></i>
+            </div>
+            <!-- Latte Box -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="foto/latte.jpg" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>Latte</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                </div>
+                <span>18$</span>
+                <i class='bx bx-cart'></i>
+            </div>
+            <!-- Tosca Box -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="foto/tosca.jpg" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>Tosca</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                </div>
+                <span>20$</span>
+                <i class='bx bx-cart'></i>
+            </div>
+            <!-- Pink Box -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="foto/pink.jpg" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>Pink</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                </div>
+                <span>18$</span>
+                <i class='bx bx-cart'></i>
+            </div>
+        </div>
+    </section>
+
+    <!--Section Untuk Part Youtube dengan Iframe-->
+    <section class="youtube" id="youtube">
+        <div class="youtube-text">
+            <span>Our Video</span>
+            <h2>Lavendaire</h2>
+            <p>Explore 500+ videos on personal growth & lifestyle design, sharing knowledge and inspiration on creating your dream life.</p>
+            <p>Join over 1 million artists of life and learn how you can start creating a beautiful and meaningful life today.</p>
+            <a href="https://www.youtube.com/@lavendaire" target="_blank" class="btn">Subscribe</a>
+        </div>
+        <iframe width="600" height="380" src="https://www.youtube.com/embed/9M0Dn-PHgbE"title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+
+    <!--Section Untuk Form-->
+    <section class="newsletter" id="Subscribe">
+        <h2>Subscribe To Lavendaire Friends</h2>
+        <div class="news-box">
+            <form id="frm1">
+                First name  : <input type="text" name="fname"> <br>
+                Last name   : <input type="text" name="lname"> <br> <br>
+            </form>
+        </div>
+        <center><button class="btnn" onclick="myFunction()">Enter to the Club!</button></center> 
+        <br><p id="demo"></p>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer" id="footer">
+        <div class="footer-box">
+            <h2>Lavendaire<span>S.</span></h2>
+            <p>Web ini dibuat untuk memenuhi tugas akhir Praktikum Pemrograman Web, atas nama Suci Amalia (09031282227036) SIREG 2A dengan bimbingan <br> Ibu Purwita Sari, S.Si., M.Kom.<br></p>
+            <div class="social">
+                <a href="https://id.pinterest.com/lavendaire/" target="_blank"><i class='bx bxl-pinterest'></i></a>
+                <a href="https://twitter.com/lavendaire" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com/lavendaire/" target="_blank"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>Menu</h3>
+            <li><a href="#about">About</a></li>
+            <li><a href="#author">Author</a></li>
+            <li><a href="#shop">BestSeller</a></li>
+            <li><a href="#new">2021 Edition</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>Tugas</h3>
+            <li><a href="responsive-html/latihan.html" target="_blank">Responsive Html</a></li>
+            <li><a href="iframe/iframe4.html" target="_blank">Iframe</a></li>
+            <li><a href="form/htmlform.html" target="_blank">Form</a></li>
+        </div>
+        <div class="footer-box contact-info">
+            <h3>Contact</h3>
+            <span>Indralaya, Palembang</span>
+            <span>Universitas Sriwijaya</span>
+            <span>Fakultas Ilmu Komputer</span>
+            <span>Sistem Informasi</span>
+        </div>
+    </section>
+
+    <!--CopyRight-->
+    <div class="copyright">
+        <p>&#169;suciamalia09031282227036 copyright 2023</p>
+    </div>
+</body>
+</html>
